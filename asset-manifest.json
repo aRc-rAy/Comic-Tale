@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/Comic-Tale/static/css/main.849bc8a8.css",
-    "main.js": "/Comic-Tale/static/js/main.032762ae.js",
+    "main.css": "/Comic-Tale/static/css/main.d252c2c6.css",
+    "main.js": "/Comic-Tale/static/js/main.1f85592b.js",
     "static/media/i10.jpg": "/Comic-Tale/static/media/i10.f32c59a7d1a0c3fd497d.jpg",
+    "static/media/i11.webp": "/Comic-Tale/static/media/i11.9c4d4ded9e1054181bfa.webp",
     "index.html": "/Comic-Tale/index.html",
-    "main.849bc8a8.css.map": "/Comic-Tale/static/css/main.849bc8a8.css.map",
-    "main.032762ae.js.map": "/Comic-Tale/static/js/main.032762ae.js.map"
+    "main.d252c2c6.css.map": "/Comic-Tale/static/css/main.d252c2c6.css.map",
+    "main.1f85592b.js.map": "/Comic-Tale/static/js/main.1f85592b.js.map"
   },
   "entrypoints": [
-    "static/css/main.849bc8a8.css",
-    "static/js/main.032762ae.js"
+    "static/css/main.d252c2c6.css",
+    "static/js/main.1f85592b.js"
   ]
 }
