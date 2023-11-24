@@ -1,0 +1,15 @@
+:root {
+	--lightBlue: rgb(221, 242, 253);
+	--mediumBlue: rgb(155, 190, 200);
+	--Blue: rgb(66, 125, 157);
+	--darkBlue: rgb(22, 72, 99);
+	--Black: rgb(34, 40, 49);
+	--Gray: rgb(57, 62, 70);
+	--lightGray: rgb(211, 211, 211);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto Mono", monospace;
+}
