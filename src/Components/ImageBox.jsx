@@ -5,10 +5,11 @@ import { RingLoader } from "react-spinners";
 
 const ImageBox = ({ placeholder, boxNumber }) => {
 	const [inputs, setText] = useState("");
-	const [image, setImage] = useState(null);
+	const [image, setImage] = useState("");
 	const [btnId, setBtnId] = useState("btn");
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(false);
+	const [noImage, setNoImage] = useState(true);
 
 	const handleChange = (e) => {
 		setText(e.target.value);
@@ -18,13 +19,14 @@ const ImageBox = ({ placeholder, boxNumber }) => {
 
 	const handleClick = (e) => {
 		if (btnId === "disabled") return;
-		setBtnId("disabled");
 		setError(false);
 		setLoading(true);
+		setBtnId("disabled");
 		query({ inputs })
 			.then((res) => {
 				const imageObjectURL = URL.createObjectURL(res);
 				setLoading(false);
+				setNoImage(false);
 				setImage(imageObjectURL);
 				setBtnId("btn");
 			})
@@ -71,8 +73,10 @@ const ImageBox = ({ placeholder, boxNumber }) => {
 					</>
 				) : error ? (
 					<h1>Error while loading</h1>
+				) : noImage === true ? (
+					<h1>Type something - Click Search</h1>
 				) : (
-					<img src={image} alt="click Search" className="img_load" />
+					<img src={image} alt="" className="img_load" />
 				)}
 			</div>
 		</div>

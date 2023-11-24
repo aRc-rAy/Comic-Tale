@@ -3,11 +3,12 @@ import Header from "./Components/Header";
 import ImageBox from "./Components/ImageBox";
 
 import image1 from "../src/Images/i10.jpg";
+import image2 from "../src/Images/i11.webp";
 
 function App() {
-	const images = [image1];
+	const images = [image1, image2];
 
-	const imageUrl = `url(${images[0]})`;
+	const imageUrl = `url(${images[1]})`;
 	const style = {
 		backgroundImage: imageUrl,
 		backgroundSize: "60vw",
@@ -30,7 +31,7 @@ function App() {
 				<ImageBox placeholder="type\\big bang real picture" boxNumber="7" />
 				<ImageBox placeholder="type\\image of multiverse" boxNumber="8" />
 				<ImageBox placeholder="type\\ironman and groot" boxNumber="9" />
-				<ImageBox placeholder="type\\ironman and groot" boxNumber="10" />
+				<ImageBox placeholder="type\\thor and banner" boxNumber="10" />
 			</div>
 		</>
 	);
